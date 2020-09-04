@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HcW-I5-NRu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Trivia_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofu-fC-rjF">
+                                <rect key="frame" x="40" y="123" width="334" height="539"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Onl-Co-2UR">
+                                        <rect key="frame" x="20" y="225" width="294" height="89.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your name?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ose-3q-o2M">
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="27.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ti4-kJ-e3z">
+                                                <rect key="frame" x="0.0" y="55.5" width="294" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Onl-Co-2UR" secondAttribute="trailing" constant="20" id="fsn-w3-T86"/>
+                                    <constraint firstItem="Onl-Co-2UR" firstAttribute="centerY" secondItem="ofu-fC-rjF" secondAttribute="centerY" id="myi-Jo-TOd"/>
+                                    <constraint firstItem="Onl-Co-2UR" firstAttribute="leading" secondItem="ofu-fC-rjF" secondAttribute="leading" constant="20" id="wa6-px-T0T"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbm-Ds-5rp">
+                                <rect key="frame" x="167" y="732" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.76939731840000003" green="0.3951789872" blue="0.35730190589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="WvD-mF-vKI"/>
+                                    <constraint firstAttribute="width" constant="80" id="yEI-hV-Xyj"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="didTapNextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZEE-cy-pB6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ofu-fC-rjF" secondAttribute="bottom" constant="200" id="2fi-co-sQl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ofu-fC-rjF" secondAttribute="trailing" constant="40" id="Eu8-Az-H6c"/>
+                            <constraint firstItem="ofu-fC-rjF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="UaF-gD-go6"/>
+                            <constraint firstItem="pbm-Ds-5rp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bA3-16-PnW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pbm-Ds-5rp" secondAttribute="bottom" constant="50" id="i9f-jT-rH7"/>
+                            <constraint firstItem="ofu-fC-rjF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="r8b-Yw-Xzk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3i2-tp-b59"/>
+                    <connections>
+                        <outlet property="nameField" destination="Ti4-kJ-e3z" id="k2A-Fb-xca"/>
+                        <outlet property="nextButton" destination="pbm-Ds-5rp" id="uT5-Rt-DoE"/>
+                        <outlet property="popupView" destination="ofu-fC-rjF" id="SZ6-kT-gG9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="Ro7-4f-fHs">
+            <objects>
+                <viewController storyboardIdentifier="QuizViewController" id="oNT-Jd-qZ8" customClass="QuizViewController" customModule="Trivia_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KFm-pQ-P5f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RtW-p0-bJV">
+                                <rect key="frame" x="40" y="84" width="334" height="578"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here the question will come, okay ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfH-AW-Pbr">
+                                        <rect key="frame" x="10" y="10" width="314" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="wUa-aG-cDn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="08q-1D-5u7" customClass="QuizOptionsView" customModule="Trivia_App" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="70" width="314" height="498"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="08q-1D-5u7" firstAttribute="leading" secondItem="RtW-p0-bJV" secondAttribute="leading" constant="10" id="F4f-ma-jSB"/>
+                                    <constraint firstAttribute="trailing" secondItem="08q-1D-5u7" secondAttribute="trailing" constant="10" id="ZuU-KW-Yyz"/>
+                                    <constraint firstAttribute="trailing" secondItem="JfH-AW-Pbr" secondAttribute="trailing" constant="10" id="eDY-RL-NhV"/>
+                                    <constraint firstAttribute="bottom" secondItem="08q-1D-5u7" secondAttribute="bottom" constant="10" id="ece-7w-DHI"/>
+                                    <constraint firstItem="JfH-AW-Pbr" firstAttribute="leading" secondItem="RtW-p0-bJV" secondAttribute="leading" constant="10" id="ehf-vP-wMK"/>
+                                    <constraint firstItem="JfH-AW-Pbr" firstAttribute="top" secondItem="RtW-p0-bJV" secondAttribute="top" constant="10" id="mrM-6b-R5t"/>
+                                    <constraint firstItem="08q-1D-5u7" firstAttribute="top" secondItem="JfH-AW-Pbr" secondAttribute="bottom" constant="10" id="pc1-SI-kOo"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDy-4c-pmF">
+                                <rect key="frame" x="167" y="732" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.76939731840000003" green="0.3951789872" blue="0.35730190589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="29b-AF-p0s"/>
+                                    <constraint firstAttribute="width" constant="80" id="6RJ-bj-9kp"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="didTapNextButton:" destination="oNT-Jd-qZ8" eventType="touchUpInside" id="UuN-Od-gli"/>
+                                    <action selector="didTapNextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uhF-HH-5Vo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aq7-tn-11e" firstAttribute="trailing" secondItem="RtW-p0-bJV" secondAttribute="trailing" constant="40" id="7Jl-Gr-jr0"/>
+                            <constraint firstItem="aq7-tn-11e" firstAttribute="bottom" secondItem="dDy-4c-pmF" secondAttribute="bottom" constant="50" id="A9U-xz-aom"/>
+                            <constraint firstItem="aq7-tn-11e" firstAttribute="bottom" secondItem="RtW-p0-bJV" secondAttribute="bottom" constant="200" id="F4y-r4-YBI"/>
+                            <constraint firstItem="dDy-4c-pmF" firstAttribute="centerX" secondItem="KFm-pQ-P5f" secondAttribute="centerX" id="Kln-cq-jkp"/>
+                            <constraint firstItem="RtW-p0-bJV" firstAttribute="leading" secondItem="aq7-tn-11e" secondAttribute="leading" constant="40" id="jOn-ND-5z4"/>
+                            <constraint firstItem="RtW-p0-bJV" firstAttribute="top" secondItem="aq7-tn-11e" secondAttribute="top" constant="40" id="jy4-I6-3rX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aq7-tn-11e"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="dDy-4c-pmF" id="VIq-wY-Iot"/>
+                        <outlet property="popupView" destination="RtW-p0-bJV" id="zyi-g5-98A"/>
+                        <outlet property="questionLabel" destination="JfH-AW-Pbr" id="OYi-dC-Abd"/>
+                        <outlet property="quizOptionView" destination="08q-1D-5u7" id="Kg5-H1-l8Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7Z-Pp-HkU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810.144927536232" y="137.94642857142856"/>
+        </scene>
+        <!--Finish View Controller-->
+        <scene sceneID="zvf-2v-35z">
+            <objects>
+                <viewController storyboardIdentifier="FinishViewController" id="rnV-p0-gZa" customClass="FinishViewController" customModule="Trivia_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="swt-3k-3gi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Phr-jn-aEL">
+                                <rect key="frame" x="20" y="64" width="374" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCo-yM-JwM">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="60"/>
+                                        <state key="normal" title="Show History"/>
+                                        <connections>
+                                            <action selector="showHistoryTapped:" destination="rnV-p0-gZa" eventType="touchUpInside" id="9Yz-vm-Nd7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2IJ-eb-t1V">
+                                        <rect key="frame" x="187" y="0.0" width="187" height="60"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="backTaped:" destination="rnV-p0-gZa" eventType="touchUpInside" id="bwX-sP-fu7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="xPR-4k-F39"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c8U-sW-uhp">
+                                <rect key="frame" x="0.0" y="124" width="414" height="738"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aOD-hA-pGw" firstAttribute="bottom" secondItem="c8U-sW-uhp" secondAttribute="bottom" id="8vy-LF-W0X"/>
+                            <constraint firstItem="Phr-jn-aEL" firstAttribute="leading" secondItem="aOD-hA-pGw" secondAttribute="leading" constant="20" id="DFa-wx-g7r"/>
+                            <constraint firstItem="c8U-sW-uhp" firstAttribute="leading" secondItem="aOD-hA-pGw" secondAttribute="leading" id="LUB-Po-ZuW"/>
+                            <constraint firstItem="aOD-hA-pGw" firstAttribute="trailing" secondItem="Phr-jn-aEL" secondAttribute="trailing" constant="20" id="TiH-cp-Xcz"/>
+                            <constraint firstItem="c8U-sW-uhp" firstAttribute="top" secondItem="Phr-jn-aEL" secondAttribute="bottom" id="kBT-tb-fW8"/>
+                            <constraint firstItem="Phr-jn-aEL" firstAttribute="top" secondItem="aOD-hA-pGw" secondAttribute="top" constant="20" id="kid-n5-jlt"/>
+                            <constraint firstItem="aOD-hA-pGw" firstAttribute="trailing" secondItem="c8U-sW-uhp" secondAttribute="trailing" id="lNN-Pj-Oad"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aOD-hA-pGw"/>
+                    </view>
+                    <connections>
+                        <outlet property="historyLabel" destination="c8U-sW-uhp" id="fdA-MQ-bVB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dx8-bg-r2L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2670" y="138"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MKS-cx-xwu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HcW-I5-NRu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0fH-Vw-OuA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6OF-75-ioE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3z-eu-4Pm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
